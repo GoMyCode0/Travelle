@@ -14,6 +14,12 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="design.css" />
     <title>Travelle</title>
   </head>
@@ -80,7 +86,7 @@
     <!--BREAK BREAK BREAK ~~~~~~ BREAK BREAK BREAK-->
 
     <section class="row hero-section">
-      <div class="col-12">
+      <div class="col-12 p-0">
         <video autoplay muted loop class="hero-video">
           <source src="hero section.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -93,43 +99,468 @@
     <!--BREAK BREAK BREAK ~~~~~~ BREAK BREAK BREAK-->
 
     <section class="row">
-      <div class="col-3">
-        <ul>
-          <p class="list-title">🌍 Explore & Book</p>
-          <li>✈ Destinations</li>
-          <li>🏝 Upcoming Trips</li>
-          <li>🗺 Custom Itineraries</li>
-          <li>🏨 Accommodations</li>
-        </ul>
+      <div class="col-12 col-md-3 col-lg-2">
+        <div class="sidebar">
+          <ul>
+            <p class="list-title">Explore & Book</p>
+            <li>
+              <img src="airplane.png" alt="airplane" /><button>
+                Destinations
+              </button>
+            </li>
+            <li>
+              <img src="world-map.png" alt="world-map" /><button>
+                Upcoming Trips
+              </button>
+            </li>
+            <li>
+              <img src="roadmap.png" alt="roadmap" /><button>
+                Custom Itineraries
+              </button>
+            </li>
+            <li>
+              <img src="lodging.png" alt="lodging" />
+              <button>Accommodations</button>
+            </li>
+          </ul>
 
-        <ul>
-          <p class="list-title">🌸 Travel Styles</p>
-          <li>🌿 Wellness Retreats</li>
-          <li>🏕 Adventure & Outdoors</li>
-          <li>🎨 Cultural & Art Tours</li>
-          <li>🛍 Luxury & Shopping Escapes</li>
-        </ul>
+          <ul>
+            <p class="list-title">Travel Styles</p>
+            <li>
+              <img src="towel.png" alt="towel" />
+              <button>Wellness Retreats</button>
+            </li>
+            <li>
+              <img src="camping.png" alt="camping" />
+              <button>Adventure & Outdoors</button>
+            </li>
+            <li>
+              <img src="sculpture.png" alt="sculpture" /><button>
+                Cultural & Art Tours
+              </button>
+            </li>
+            <li>
+              <img src="shopper.png" alt="shopper" />
+              <button>Shopping Escapes</button>
+            </li>
+          </ul>
 
-        <ul>
-          <p class="list-title">👭 Community & Resources</p>
-          <li>💬 Travel Blog & Tips</li>
-          <li>🛡 Safety for Solo Travelers</li>
-          <li>🤝 Meet Fellow Travelers</li>
-          <li>📸 Traveler Stories</li>
-        </ul>
+          <ul>
+            <p class="list-title">Community & Resources</p>
+            <li>
+              <img src="tips.png" alt="tips" />
+              <button>Travel Blog & Tips</button>
+            </li>
+            <li>
+              <img src="safety.png" alt="safety" />
+              <button>Safety for Solo Travelers</button>
+            </li>
+            <li>
+              <img src="traveller.png" alt="traveller" /><button>
+                Meet Fellow Travelers
+              </button>
+            </li>
+            <li>
+              <img src="chat.png" alt="chat" />
+              <button>Traveler Stories</button>
+            </li>
+          </ul>
 
-        <ul>
-          <p class="list-title">📞 Support & Contact</p>
-          <li>❓ FAQ & Help</li>
-          <li>📍 About Us</li>
-          <li>📞 Contact a Travel Advisor</li>
-        </ul>
+          <ul>
+            <p class="list-title">Support & Contact</p>
+            <li>
+              <img src="question.png" alt="question" />
+              <button>FAQ & Help</button>
+            </li>
+            <li>
+              <img src="about.png" alt="about" id="about" />
+              <button>About Us</button>
+            </li>
+            <li>
+              <img src="call.png" alt="call" id="call" />
+              <button>Contact a Travel Advisor</button>
+            </li>
+          </ul>
+        </div>
       </div>
-      <main class="col-9 container-fluid">MAIN</main>
+
+      <!--BREAK BREAK BREAK ~~~~~~ BREAK BREAK BREAK-->
+      <!--BREAK BREAK BREAK ~~~~~~ BREAK BREAK BREAK-->
+      <!--BREAK BREAK BREAK ~~~~~~ BREAK BREAK BREAK-->
+
+      <main class="col-12 col-md-9 col-lg-10 container-fluid">
+        <div class="row heading">
+          <div class="col-12 heading">
+            <h1>
+              Travel made easy for
+              <span style="color: rgb(255, 0, 174)">her</span>.
+            </h1>
+          </div>
+        </div>
+        <div class="container-fluid main-content-container">
+          <div class="row main-content-row">
+            <div class="col-12 main-content-col">
+              <!--BREAK BREAK BREAK ~~~~~~ BREAK BREAK BREAK-->
+              <div class="card">
+                <h2>
+                  Pick based on
+                  <span style="color: rgb(255, 0, 174)">destination</span>
+                </h2>
+                <div class="options option1">
+                  <div
+                    id="carouselExampleRide"
+                    class="carousel slide"
+                    data-bs-ride="true"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="01.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="destination-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="09.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="destination-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="11.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="destination-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="12.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="destination-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="03.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="destination-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="08.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="destination-pics"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleRide"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleRide"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <button class="explore">Let's gooo!!</button>
+                </div>
+              </div>
+              <!--BREAK BREAK BREAK ~~~~~~ BREAK BREAK BREAK-->
+              <div class="card">
+                <h2>
+                  Pick based on
+                  <span style="color: rgb(255, 0, 174)">accommodations</span>
+                </h2>
+                <div class="options option2">
+                  <div
+                    id="carouselExampleRide2"
+                    class="carousel slide"
+                    data-bs-ride="true"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="02.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="accommodations-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="04.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="accommodations-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="05.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="accommodations-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="06.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="accommodations-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="10.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="accommodations-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="23.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="accommodations-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="24.jpg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="accommodations-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="20.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="accommodations-pics"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleRide2"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleRide2"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <button class="explore">Heck, yeah!!</button>
+                </div>
+              </div>
+              <!--BREAK BREAK BREAK ~~~~~~ BREAK BREAK BREAK-->
+
+              <div class="card">
+                <h2>
+                  Pick based on
+                  <span style="color: rgb(255, 0, 174)">programs</span>
+                </h2>
+                <div class="options option3">
+                  <div
+                    id="carouselExampleRide3"
+                    class="carousel slide"
+                    data-bs-ride="true"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="07.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="program-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="13.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="program-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="14.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="program-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="15.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="program-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="18.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="program-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="19.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="program-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="16.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="program-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="21.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="program-pics"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="22.jpeg"
+                          class="d-block w-100"
+                          alt="summer"
+                          id="program-pics"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleRide3"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleRide3"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <button class="explore">I wanna try!!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </section>
 
     <!--BREAK BREAK BREAK ~~~~~~ BREAK BREAK BREAK-->
     <!--BREAK BREAK BREAK ~~~~~~ BREAK BREAK BREAK-->
     <!--BREAK BREAK BREAK ~~~~~~ BREAK BREAK BREAK-->
+    <footer>
+      <div class="container">
+        <div class="row footer-div">
+          <div class="col-12 col-sm-6 col-md-4 footer-content">
+            <div class="links">
+              <ul>
+                <p>Quick Links</p>
+                <li>Destinations</li>
+                <li>Travel Packages</li>
+                <li>Book a Trip</li>
+                <li>Travel Guides</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 footer-content">
+            <div class="socials">
+              <ul>
+                <p>Follow Us</p>
+                <li>📷 Instagram: @travellejourneys</li>
+                <li>📘 Facebook: Travelle Adventures</li>
+                <li>📌 Pinterest: @travellejourneys</li>
+                <li>🎥 YouTube: Travelle Travel Stories</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 footer-content">
+            <div class="subscribe">
+              <p>
+                Join Our Mailing List
+                <br />
+                "Get exclusive travel deals, tips, and updates on new
+                destinations!"
+              </p>
+              <button class="sub">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

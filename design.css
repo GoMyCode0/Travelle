@@ -1,4 +1,10 @@
+body {
+  overflow-x: hidden;
+}
 
+/*BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK*/
+/*BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK*/
+/*BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK*/
 
 #logo {
   width: 250px;
@@ -13,16 +19,20 @@
   background-color: rgb(245, 245, 245);
   box-shadow: 1px 2px 5px #5555551c;
 }
-.col-12{
+.col-12 {
   padding: 0;
   margin: 0;
 }
 
+/*BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK*/
+/*BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK*/
+/*BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK*/
+
 .hero-section {
   position: relative;
-  width: 100vw; 
-  height: 100vh; 
-  overflow: hidden; 
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .hero-video {
@@ -35,7 +45,181 @@
   z-index: -1;
 }
 
+/*BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK*/
+/*BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK*/
+/*BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK*/
+
 .list-title {
   font-size: 20px;
   font-weight: bold;
+}
+
+.sidebar {
+  background-color: rgb(252, 252, 252);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 1px 2px 5px #55555532;
+  padding-left: 35px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  padding-top: 10px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.sidebar img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 12px;
+  margin-right: 2px;
+  flex-shrink: 0;
+}
+
+#about {
+  width: 28px;
+  height: 28px;
+  margin-right: 5px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  flex-grow: 1;
+}
+
+button:hover {
+  color: rgb(255, 0, 174);
+}
+
+/*BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK*/
+/*BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK*/
+/*BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK*/
+
+h1 {
+  font-size: 75px;
+  font-family: "Playfair Display", serif;
+  margin-top: 20px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.main-content-col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.options {
+  width: 360px;
+  height: 680px;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 1px 2px 5px #5555551c;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  border: none;
+}
+
+#destination-pics,
+#accommodations-pics,
+#program-pics {
+  width: 360px;
+  height: 600px;
+  border-radius: 10px 10px 0 0;
+}
+
+.explore {
+  background-color: rgb(255, 0, 174);
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+}
+
+.explore:hover {
+  background-color: rgb(239, 51, 180);
+  color: black;
+}
+
+/*BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK*/
+/*BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK*/
+/*BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK BREAK ~~~~~~ BREAK*/
+
+.footer-content {
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sub {
+  background-color: rgb(237, 99, 181);
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 10px;
+  color: white;
+}
+
+.subscribe {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+  font-size: 10px;
+  background-color: rgb(252, 252, 252);
+  box-shadow: 1px 2px 5px #5555556a;
+  z-index: 100;
+}
+
+footer li {
+  font-size: 10px;
 }
